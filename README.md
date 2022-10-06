@@ -58,6 +58,7 @@ $ platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fa
 ![image](https://user-images.githubusercontent.com/74643940/194401841-4c6da966-d660-4c52-bade-fb8d754a1e8b.png)
 
 ## Colab
+###### https://colab.research.google.com/drive/1KD7XxoKcSD4SAvnd5Pcl5zljIr9w-ajq?usp=sharing
 
 **Инициализация функции для вывода информации**
 
