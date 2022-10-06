@@ -1,0 +1,594 @@
+login as: rrziyoev
+Authenticating with public key "rsa-key-20220908"
+Passphrase for key "rsa-key-20220908":
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-47-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+109 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+*** System restart required ***
+Last login: Thu Oct  6 17:56:45 2022 from 172.30.1.190
+rrziyoev@bioinflab-1:~$ ln -s /usr/share/data-minor-bioinf/assembly/* .
+rrziyoev@bioinflab-1:~$ ls oil_R* | xargs -I {} -P 10 sh -c "seqtk sample -s 928 {} 5000000 > sub-{}"
+rrziyoev@bioinflab-1:~$ ls oilMP_S4_L001_R* | xargs -I {} -P 10 sh -c "seqtk sample -s 928 {} 1500000 > sub-{}"
+rrziyoev@bioinflab-1:~$ fastqc sub-*
+Started analysis of sub-oilMP_S4_L001_R1_001.fastq
+Approx 5% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 10% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 15% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 20% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 25% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 30% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 35% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 40% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 45% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 50% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 55% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 60% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 65% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 70% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 75% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 80% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 85% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 90% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 95% complete for sub-oilMP_S4_L001_R1_001.fastq
+Approx 100% complete for sub-oilMP_S4_L001_R1_001.fastq
+Analysis complete for sub-oilMP_S4_L001_R1_001.fastq
+Started analysis of sub-oilMP_S4_L001_R2_001.fastq
+Approx 5% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 10% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 15% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 20% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 25% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 30% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 35% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 40% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 45% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 50% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 55% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 60% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 65% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 70% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 75% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 80% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 85% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 90% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 95% complete for sub-oilMP_S4_L001_R2_001.fastq
+Approx 100% complete for sub-oilMP_S4_L001_R2_001.fastq
+Analysis complete for sub-oilMP_S4_L001_R2_001.fastq
+Started analysis of sub-oil_R1.fastq
+Approx 5% complete for sub-oil_R1.fastq
+Approx 10% complete for sub-oil_R1.fastq
+Approx 15% complete for sub-oil_R1.fastq
+Approx 20% complete for sub-oil_R1.fastq
+Approx 25% complete for sub-oil_R1.fastq
+Approx 30% complete for sub-oil_R1.fastq
+Approx 35% complete for sub-oil_R1.fastq
+Approx 40% complete for sub-oil_R1.fastq
+Approx 45% complete for sub-oil_R1.fastq
+Approx 50% complete for sub-oil_R1.fastq
+Approx 55% complete for sub-oil_R1.fastq
+Approx 60% complete for sub-oil_R1.fastq
+Approx 65% complete for sub-oil_R1.fastq
+Approx 70% complete for sub-oil_R1.fastq
+Approx 75% complete for sub-oil_R1.fastq
+Approx 80% complete for sub-oil_R1.fastq
+Approx 85% complete for sub-oil_R1.fastq
+Approx 90% complete for sub-oil_R1.fastq
+Approx 95% complete for sub-oil_R1.fastq
+Approx 100% complete for sub-oil_R1.fastq
+Analysis complete for sub-oil_R1.fastq
+Started analysis of sub-oil_R2.fastq
+Approx 5% complete for sub-oil_R2.fastq
+Approx 10% complete for sub-oil_R2.fastq
+Approx 15% complete for sub-oil_R2.fastq
+Approx 20% complete for sub-oil_R2.fastq
+Approx 25% complete for sub-oil_R2.fastq
+Approx 30% complete for sub-oil_R2.fastq
+Approx 35% complete for sub-oil_R2.fastq
+Approx 40% complete for sub-oil_R2.fastq
+Approx 45% complete for sub-oil_R2.fastq
+Approx 50% complete for sub-oil_R2.fastq
+Approx 55% complete for sub-oil_R2.fastq
+Approx 60% complete for sub-oil_R2.fastq
+Approx 65% complete for sub-oil_R2.fastq
+Approx 70% complete for sub-oil_R2.fastq
+Approx 75% complete for sub-oil_R2.fastq
+Approx 80% complete for sub-oil_R2.fastq
+Approx 85% complete for sub-oil_R2.fastq
+Approx 90% complete for sub-oil_R2.fastq
+Approx 95% complete for sub-oil_R2.fastq
+Approx 100% complete for sub-oil_R2.fastq
+Analysis complete for sub-oil_R2.fastq
+rrziyoev@bioinflab-1:~$ multiqc .
+
+  /// MultiQC 🔍 | v1.13
+
+|           multiqc | Search path : /home/rrziyoev
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 99/99
+|            fastqc | Found 4 reports
+|           multiqc | Compressing plot data
+|           multiqc | Report      : multiqc_report.html
+|           multiqc | Data        : multiqc_data
+|           multiqc | MultiQC complete
+rrziyoev@bioinflab-1:~$ mkdir to_scp && mv *.zip to_scp/ mv multiqc_data/ to_scp/ && mv *.html to_scp/
+mv: cannot move 'to_scp/' to a subdirectory of itself, 'to_scp/to_scp'
+mv: cannot stat 'mv': No such file or directory
+rrziyoev@bioinflab-1:~$ platanus_trim sub-oil_R*
+Invalid format or cannot open: sub-oil_R1_fastqc.html
+platanus_trim version 1.0.7
+
+usage: platanus_trim [options]
+
+options:
+  -i str    List of input files (default NULL)
+  ------
+  -q int    Quality cutoff value (default 15)
+  -l int    Output length cutoff value  (default 25)
+  -f        Not remove read even if the pair is too short
+  -t int    Max number of threads (default 1)
+  -1 str    adaptor 1 (default AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT)
+  -2 str    adaptor 2 (default CAAGCAGAAGACGGCATACGAGATCGGTCTCGGCATTCCTGCTGAACCGCTCTTCCGATCT)
+
+rrziyoev@bioinflab-1:~$ mkdir to_scp
+mkdir: cannot create directory ‘to_scp’: File exists
+rrziyoev@bioinflab-1:~$ ls
+multiqc_report.html         oilMP_S4_L001_R2_001.fastq  oil_R2.fastq  sub-oilMP_S4_L001_R1_001.fastq        sub-oilMP_S4_L001_R2_001.fastq        sub-oil_R1.fastq        sub-oil_R2.fastq        to_scp
+oilMP_S4_L001_R1_001.fastq  oil_R1.fastq                snap          sub-oilMP_S4_L001_R1_001_fastqc.html  sub-oilMP_S4_L001_R2_001_fastqc.html  sub-oil_R1_fastqc.html  sub-oil_R2_fastqc.html
+rrziyoev@bioinflab-1:~$ cd to_scp
+rrziyoev@bioinflab-1:~/to_scp$ ls
+multiqc_data  sub-oilMP_S4_L001_R1_001_fastqc.zip  sub-oilMP_S4_L001_R2_001_fastqc.zip  sub-oil_R1_fastqc.zip  sub-oil_R2_fastqc.zip
+rrziyoev@bioinflab-1:~/to_scp$ cd
+rrziyoev@bioinflab-1:~$ mv *.zip to_scp/ mv multiqc_data/ to_scp/ && mv *.html to_scp/
+mv: cannot stat '*.zip': No such file or directory
+mv: cannot move 'to_scp/' to a subdirectory of itself, 'to_scp/to_scp'
+mv: cannot stat 'mv': No such file or directory
+mv: cannot stat 'multiqc_data/': No such file or directory
+rrziyoev@bioinflab-1:~$ ls
+multiqc_report.html         oilMP_S4_L001_R2_001.fastq  oil_R2.fastq  sub-oilMP_S4_L001_R1_001.fastq        sub-oilMP_S4_L001_R2_001.fastq        sub-oil_R1.fastq        sub-oil_R2.fastq        to_scp
+oilMP_S4_L001_R1_001.fastq  oil_R1.fastq                snap          sub-oilMP_S4_L001_R1_001_fastqc.html  sub-oilMP_S4_L001_R2_001_fastqc.html  sub-oil_R1_fastqc.html  sub-oil_R2_fastqc.html
+rrziyoev@bioinflab-1:~$ rm to_scp
+rm: cannot remove 'to_scp': Is a directory
+rrziyoev@bioinflab-1:~$ rmdir to_scp
+rmdir: failed to remove 'to_scp': Directory not empty
+rrziyoev@bioinflab-1:~$ cd to_scp
+rrziyoev@bioinflab-1:~/to_scp$ ls
+multiqc_data  sub-oilMP_S4_L001_R1_001_fastqc.zip  sub-oilMP_S4_L001_R2_001_fastqc.zip  sub-oil_R1_fastqc.zip  sub-oil_R2_fastqc.zip
+rrziyoev@bioinflab-1:~/to_scp$ cd multiqc_data
+rrziyoev@bioinflab-1:~/to_scp/multiqc_data$ ls
+multiqc_citations.txt  multiqc_data.json  multiqc_fastqc.txt  multiqc_general_stats.txt  multiqc.log  multiqc_sources.txt
+rrziyoev@bioinflab-1:~/to_scp/multiqc_data$ cd
+rrziyoev@bioinflab-1:~$ platanus_trim sub-oil_R*
+Invalid format or cannot open: sub-oil_R1_fastqc.html
+platanus_trim version 1.0.7
+
+usage: platanus_trim [options]
+
+options:
+  -i str    List of input files (default NULL)
+  ------
+  -q int    Quality cutoff value (default 15)
+  -l int    Output length cutoff value  (default 25)
+  -f        Not remove read even if the pair is too short
+  -t int    Max number of threads (default 1)
+  -1 str    adaptor 1 (default AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT)
+  -2 str    adaptor 2 (default CAAGCAGAAGACGGCATACGAGATCGGTCTCGGCATTCCTGCTGAACCGCTCTTCCGATCT)
+
+rrziyoev@bioinflab-1:~$ ls
+multiqc_report.html         oilMP_S4_L001_R2_001.fastq  oil_R2.fastq  sub-oilMP_S4_L001_R1_001.fastq        sub-oilMP_S4_L001_R2_001.fastq        sub-oil_R1.fastq        sub-oil_R2.fastq        to_scp
+oilMP_S4_L001_R1_001.fastq  oil_R1.fastq                snap          sub-oilMP_S4_L001_R1_001_fastqc.html  sub-oilMP_S4_L001_R2_001_fastqc.html  sub-oil_R1_fastqc.html  sub-oil_R2_fastqc.html
+rrziyoev@bioinflab-1:~$ platanus_trim sub*
+Invalid format or cannot open: sub-oilMP_S4_L001_R1_001_fastqc.html
+platanus_trim version 1.0.7
+
+usage: platanus_trim [options]
+
+options:
+  -i str    List of input files (default NULL)
+  ------
+  -q int    Quality cutoff value (default 15)
+  -l int    Output length cutoff value  (default 25)
+  -f        Not remove read even if the pair is too short
+  -t int    Max number of threads (default 1)
+  -1 str    adaptor 1 (default AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT)
+  -2 str    adaptor 2 (default CAAGCAGAAGACGGCATACGAGATCGGTCTCGGCATTCCTGCTGAACCGCTCTTCCGATCT)
+
+rrziyoev@bioinflab-1:~$ platanus_internal_trim matep*
+Invalid format or cannot open: matep*
+platanus_internal_trim version 1.0.7
+
+usage: platanus_trim [options]
+
+options:
+  -i str    List of input files (default NULL)
+  ------
+  -t int    Max number of threads (default 1)
+  -a int    Select internal adaptor type (default 2)
+            1: 454 adaptor (ATCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACGT)
+            2: Nextera adaptor (CTGTCTCTTATACACATCTAGATGTGTATAAGAGACAG)
+            3: Solid adaptor (TGCTGTACCGTACATCCGCCTTGGCCGTACAGCAG)
+  -b str    Set internal adaptor seq (if you can use original internal adaptor without -a option)
+  -q int    Quality cutoff value (default 15)
+  -l int    Output length cutoff value  (default 25)
+  -f        Not remove read even if the pair is too short
+  -1 str    adaptor 1 (default AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT)
+  -2 str    adaptor 2 (default CAAGCAGAAGACGGCATACGAGATCGGTCTCGGCATTCCTGCTGAACCGCTCTTCCGATCT)
+
+rrziyoev@bioinflab-1:~$ ls
+multiqc_report.html         oilMP_S4_L001_R2_001.fastq  oil_R2.fastq  sub-oilMP_S4_L001_R1_001.fastq        sub-oilMP_S4_L001_R2_001.fastq        sub-oil_R1.fastq        sub-oil_R2.fastq        to_scp
+oilMP_S4_L001_R1_001.fastq  oil_R1.fastq                snap          sub-oilMP_S4_L001_R1_001_fastqc.html  sub-oilMP_S4_L001_R2_001_fastqc.html  sub-oil_R1_fastqc.html  sub-oil_R2_fastqc.html
+rrziyoev@bioinflab-1:~$ rm -r to_scp
+rrziyoev@bioinflab-1:~$ platanus_internal_trim sub-oilMP_S4_L001_R*
+Invalid format or cannot open: sub-oilMP_S4_L001_R1_001_fastqc.html
+platanus_internal_trim version 1.0.7
+
+usage: platanus_trim [options]
+
+options:
+  -i str    List of input files (default NULL)
+  ------
+  -t int    Max number of threads (default 1)
+  -a int    Select internal adaptor type (default 2)
+            1: 454 adaptor (ATCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACGT)
+            2: Nextera adaptor (CTGTCTCTTATACACATCTAGATGTGTATAAGAGACAG)
+            3: Solid adaptor (TGCTGTACCGTACATCCGCCTTGGCCGTACAGCAG)
+  -b str    Set internal adaptor seq (if you can use original internal adaptor without -a option)
+  -q int    Quality cutoff value (default 15)
+  -l int    Output length cutoff value  (default 25)
+  -f        Not remove read even if the pair is too short
+  -1 str    adaptor 1 (default AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT)
+  -2 str    adaptor 2 (default CAAGCAGAAGACGGCATACGAGATCGGTCTCGGCATTCCTGCTGAACCGCTCTTCCGATCT)
+
+rrziyoev@bioinflab-1:~$ mkdir trim && mv *trimmed trim/
+mv: cannot stat '*trimmed': No such file or directory
+rrziyoev@bioinflab-1:~$ ls
+multiqc_report.html         oilMP_S4_L001_R2_001.fastq  oil_R2.fastq  sub-oilMP_S4_L001_R1_001.fastq        sub-oilMP_S4_L001_R2_001.fastq        sub-oil_R1.fastq        sub-oil_R2.fastq        trim
+oilMP_S4_L001_R1_001.fastq  oil_R1.fastq                snap          sub-oilMP_S4_L001_R1_001_fastqc.html  sub-oilMP_S4_L001_R2_001_fastqc.html  sub-oil_R1_fastqc.html  sub-oil_R2_fastqc.html
+rrziyoev@bioinflab-1:~$ cd trim
+rrziyoev@bioinflab-1:~/trim$ ls
+rrziyoev@bioinflab-1:~/trim$ rm trim
+rm: cannot remove 'trim': No such file or directory
+rrziyoev@bioinflab-1:~/trim$ cd
+rrziyoev@bioinflab-1:~$ rm trim
+rm: cannot remove 'trim': Is a directory
+rrziyoev@bioinflab-1:~$ rmdir trim
+rrziyoev@bioinflab-1:~$ sl
+Command 'sl' not found, but can be installed with:
+apt install sl
+Please ask your administrator.
+rrziyoev@bioinflab-1:~$ ls
+multiqc_report.html         oilMP_S4_L001_R2_001.fastq  oil_R2.fastq  sub-oilMP_S4_L001_R1_001.fastq        sub-oilMP_S4_L001_R2_001.fastq        sub-oil_R1.fastq        sub-oil_R2.fastq
+oilMP_S4_L001_R1_001.fastq  oil_R1.fastq                snap          sub-oilMP_S4_L001_R1_001_fastqc.html  sub-oilMP_S4_L001_R2_001_fastqc.html  sub-oil_R1_fastqc.html  sub-oil_R2_fastqc.html
+rrziyoev@bioinflab-1:~$ platanus_trim sub-oil_R1.fastq
+Running with trim adapter mode
+number of input files must be even.
+
+#### PROCESS INFORMATION ####
+User Time:           0.00 min
+System Time:         0.00 min
+VmPeak:           0.006 GByte
+VmHWM:            0.002 GByte
+Execution time:      0.00 min
+
+rrziyoev@bioinflab-1:~$ platanus_trim sub-oil_R2.fastq
+Running with trim adapter mode
+number of input files must be even.
+
+#### PROCESS INFORMATION ####
+User Time:           0.00 min
+System Time:         0.00 min
+VmPeak:           0.006 GByte
+VmHWM:            0.002 GByte
+Execution time:      0.00 min
+
+rrziyoev@bioinflab-1:~$ platanus_trim sub-oilMP_S4_L001_R1_001.fastq
+Running with trim adapter mode
+number of input files must be even.
+
+#### PROCESS INFORMATION ####
+User Time:           0.00 min
+System Time:         0.00 min
+VmPeak:           0.006 GByte
+VmHWM:            0.002 GByte
+Execution time:      0.00 min
+
+rrziyoev@bioinflab-1:~$ platanus_trim sub-oilMP_S4_L001_R2_001.fastq
+Running with trim adapter mode
+number of input files must be even.
+
+#### PROCESS INFORMATION ####
+User Time:           0.00 min
+System Time:         0.00 min
+VmPeak:           0.006 GByte
+VmHWM:            0.002 GByte
+Execution time:      0.00 min
+
+rrziyoev@bioinflab-1:~$ ls
+multiqc_report.html         oilMP_S4_L001_R2_001.fastq  oil_R2.fastq  sub-oilMP_S4_L001_R1_001.fastq        sub-oilMP_S4_L001_R2_001.fastq        sub-oil_R1.fastq        sub-oil_R2.fastq
+oilMP_S4_L001_R1_001.fastq  oil_R1.fastq                snap          sub-oilMP_S4_L001_R1_001_fastqc.html  sub-oilMP_S4_L001_R2_001_fastqc.html  sub-oil_R1_fastqc.html  sub-oil_R2_fastqc.html
+rrziyoev@bioinflab-1:~$ mkdir html
+rrziyoev@bioinflab-1:~$ rmdir html
+rrziyoev@bioinflab-1:~$ mv *.html to_scp/
+mv: target 'to_scp/' is not a directory
+rrziyoev@bioinflab-1:~$ mkdir html
+rrziyoev@bioinflab-1:~$ mv *.html html/
+rrziyoev@bioinflab-1:~$ ls
+html  oilMP_S4_L001_R1_001.fastq  oilMP_S4_L001_R2_001.fastq  oil_R1.fastq  oil_R2.fastq  snap  sub-oilMP_S4_L001_R1_001.fastq  sub-oilMP_S4_L001_R2_001.fastq  sub-oil_R1.fastq  sub-oil_R2.fastq
+rrziyoev@bioinflab-1:~$ platanus_trim sub-oil_R*
+Running with trim adapter mode
+Checking files:
+  sub-oil_R1.fastq sub-oil_R2.fastq  (100%)
+
+Number of trimmed read with adapter:
+NUM_OF_TRIMMED_READ(FORWARD) = 209171
+NUM_OF_TRIMMED_BASE(FORWARD) = 206986
+NUM_OF_TRIMMED_READ(REVERSE) = 209215
+NUM_OF_TRIMMED_BASE(REVERSE) = 353663
+NUM_OF_TRIMMED_PAIR(OR) = 209239
+NUM_OF_TRIMMED_PAIR(AND) = 209147
+
+
+Number of trimmed read because of low quality or too short (< 11bp):
+NUM_OF_TRIMMED_READ(FORWARD) = 908564
+NUM_OF_TRIMMED_BASE(FORWARD) = 18125009
+NUM_OF_TRIMMED_READ(REVERSE) = 1179702
+NUM_OF_TRIMMED_BASE(REVERSE) = 35925471
+NUM_OF_TRIMMED_PAIR(OR) = 1631218
+NUM_OF_TRIMMED_PAIR(AND) = 457048
+
+
+#### PROCESS INFORMATION ####
+User Time:           1.10 min
+System Time:         0.04 min
+VmPeak:           0.116 GByte
+VmHWM:            0.110 GByte
+Execution time:      1.15 min
+
+rrziyoev@bioinflab-1:~$ platanus_internal_trim sub-oilMP_S4_L001_R*
+Running with trim internal adapter mode
+Checking files:
+  sub-oilMP_S4_L001_R1_001.fastq sub-oilMP_S4_L001_R2_001.fastq  (100%)
+
+Number of trimmed read with internal adapter:
+NUM_OF_TRIMMED_READ(FORWARD) = 971667
+NUM_OF_TRIMMED_BASE(FORWARD) = 169530267
+NUM_OF_TRIMMED_READ(REVERSE) = 956532
+NUM_OF_TRIMMED_BASE(REVERSE) = 171440124
+NUM_OF_TRIMMED_PAIR(OR) = 1187764
+NUM_OF_TRIMMED_PAIR(AND) = 740435
+
+
+Number of trimmed read with adapter:
+NUM_OF_TRIMMED_READ(FORWARD) = 11145
+NUM_OF_TRIMMED_BASE(FORWARD) = 366348
+NUM_OF_TRIMMED_READ(REVERSE) = 11166
+NUM_OF_TRIMMED_BASE(REVERSE) = 389195
+NUM_OF_TRIMMED_PAIR(OR) = 11172
+NUM_OF_TRIMMED_PAIR(AND) = 11139
+
+
+Number of trimmed read because of low quality or too short (< 11bp):
+NUM_OF_TRIMMED_READ(FORWARD) = 360729
+NUM_OF_TRIMMED_BASE(FORWARD) = 11667281
+NUM_OF_TRIMMED_READ(REVERSE) = 468276
+NUM_OF_TRIMMED_BASE(REVERSE) = 23883600
+NUM_OF_TRIMMED_PAIR(OR) = 724081
+NUM_OF_TRIMMED_PAIR(AND) = 104924
+
+
+#### PROCESS INFORMATION ####
+User Time:           1.11 min
+System Time:         0.01 min
+VmPeak:           0.167 GByte
+VmHWM:            0.161 GByte
+Execution time:      1.12 min
+
+rrziyoev@bioinflab-1:~$ ls
+html                        oilMP_S4_L001_R2_001.fastq  oil_R2.fastq  sub-oilMP_S4_L001_R1_001.fastq              sub-oilMP_S4_L001_R2_001.fastq              sub-oil_R1.fastq          sub-oil_R2.fastq
+oilMP_S4_L001_R1_001.fastq  oil_R1.fastq                snap          sub-oilMP_S4_L001_R1_001.fastq.int_trimmed  sub-oilMP_S4_L001_R2_001.fastq.int_trimmed  sub-oil_R1.fastq.trimmed  sub-oil_R2.fastq.trimmed
+rrziyoev@bioinflab-1:~$ mkdir trim && mv *trimmed trim/
+rrziyoev@bioinflab-1:~$ ls
+html  oilMP_S4_L001_R1_001.fastq  oilMP_S4_L001_R2_001.fastq  oil_R1.fastq  oil_R2.fastq  snap  sub-oilMP_S4_L001_R1_001.fastq  sub-oilMP_S4_L001_R2_001.fastq  sub-oil_R1.fastq  sub-oil_R2.fastq  trim
+rrziyoev@bioinflab-1:~$ cd trim/
+rrziyoev@bioinflab-1:~/trim$ fastqc *
+Started analysis of sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 5% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 10% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 15% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 20% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 25% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 30% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 35% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 40% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 45% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 50% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 55% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 60% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 65% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 70% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 75% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 80% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 85% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 90% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Approx 95% complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Analysis complete for sub-oilMP_S4_L001_R1_001.fastq.int_trimmed
+Started analysis of sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 5% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 10% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 15% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 20% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 25% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 30% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 35% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 40% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 45% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 50% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 55% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 60% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 65% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 70% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 75% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 80% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 85% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 90% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Approx 95% complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Analysis complete for sub-oilMP_S4_L001_R2_001.fastq.int_trimmed
+Started analysis of sub-oil_R1.fastq.trimmed
+Approx 5% complete for sub-oil_R1.fastq.trimmed
+Approx 10% complete for sub-oil_R1.fastq.trimmed
+Approx 15% complete for sub-oil_R1.fastq.trimmed
+Approx 20% complete for sub-oil_R1.fastq.trimmed
+Approx 25% complete for sub-oil_R1.fastq.trimmed
+Approx 30% complete for sub-oil_R1.fastq.trimmed
+Approx 35% complete for sub-oil_R1.fastq.trimmed
+Approx 40% complete for sub-oil_R1.fastq.trimmed
+Approx 45% complete for sub-oil_R1.fastq.trimmed
+Approx 50% complete for sub-oil_R1.fastq.trimmed
+Approx 55% complete for sub-oil_R1.fastq.trimmed
+Approx 60% complete for sub-oil_R1.fastq.trimmed
+Approx 65% complete for sub-oil_R1.fastq.trimmed
+Approx 70% complete for sub-oil_R1.fastq.trimmed
+Approx 75% complete for sub-oil_R1.fastq.trimmed
+Approx 80% complete for sub-oil_R1.fastq.trimmed
+Approx 85% complete for sub-oil_R1.fastq.trimmed
+Approx 90% complete for sub-oil_R1.fastq.trimmed
+Approx 95% complete for sub-oil_R1.fastq.trimmed
+Analysis complete for sub-oil_R1.fastq.trimmed
+Started analysis of sub-oil_R2.fastq.trimmed
+Approx 5% complete for sub-oil_R2.fastq.trimmed
+Approx 10% complete for sub-oil_R2.fastq.trimmed
+Approx 15% complete for sub-oil_R2.fastq.trimmed
+Approx 20% complete for sub-oil_R2.fastq.trimmed
+Approx 25% complete for sub-oil_R2.fastq.trimmed
+Approx 30% complete for sub-oil_R2.fastq.trimmed
+Approx 35% complete for sub-oil_R2.fastq.trimmed
+Approx 40% complete for sub-oil_R2.fastq.trimmed
+Approx 45% complete for sub-oil_R2.fastq.trimmed
+Approx 50% complete for sub-oil_R2.fastq.trimmed
+Approx 55% complete for sub-oil_R2.fastq.trimmed
+Approx 60% complete for sub-oil_R2.fastq.trimmed
+Approx 65% complete for sub-oil_R2.fastq.trimmed
+Approx 70% complete for sub-oil_R2.fastq.trimmed
+Approx 75% complete for sub-oil_R2.fastq.trimmed
+Approx 80% complete for sub-oil_R2.fastq.trimmed
+Approx 85% complete for sub-oil_R2.fastq.trimmed
+Approx 90% complete for sub-oil_R2.fastq.trimmed
+Approx 95% complete for sub-oil_R2.fastq.trimmed
+Analysis complete for sub-oil_R2.fastq.trimmed
+rrziyoev@bioinflab-1:~/trim$ multiqc .
+
+  /// MultiQC 🔍 | v1.13
+
+|           multiqc | Search path : /home/rrziyoev/trim
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 12/12
+|            fastqc | Found 4 reports
+|           multiqc | Compressing plot data
+|           multiqc | Report      : multiqc_report.html
+|           multiqc | Data        : multiqc_data
+|           multiqc | MultiQC complete
+rrziyoev@bioinflab-1:~/trim$ cd .. && mkdir contigs && mv trim/*trimmed contigs/ && cd contigs
+rrziyoev@bioinflab-1:~/contigs$ ls
+sub-oilMP_S4_L001_R1_001.fastq.int_trimmed  sub-oilMP_S4_L001_R2_001.fastq.int_trimmed  sub-oil_R1.fastq.trimmed  sub-oil_R2.fastq.trimmed
+rrziyoev@bioinflab-1:~/contigs$ platanus assemble –o Contig –f sub-oil*.trimmed
+Platanus version: 1.2.4
+platanus assemble –o Contig –f sub-oil_R1.fastq.trimmed sub-oil_R2.fastq.trimmed
+
+
+Usage platanus assemble [Options]
+Options:
+    -o STR               : prefix of output files (default out, length <= 200)
+    -f FILE1 [FILE2 ...] : reads file (fasta or fastq, number <= 100)
+    -k INT               : initial k-mer size (default 32)
+    -s INT               : step size of k-mer extension (>= 1, default 10)
+    -n INT               : initial k-mer coverage cutoff (default 0, 0 means auto)
+    -c INT               : minimun k-mer coverage (default 2)
+    -a FLOAT             : k-mer extension safety level (default 10.0)
+    -u FLOAT             : maximum difference for bubble crush (identity, default 0.1)
+    -d FLOAT             : maximum difference for branch cutting (coverage ratio, default 0.5)
+    -e FLOAT             : k-mer coverage depth (k = initial k-mer size specified by -k) of homozygous region (default auto)
+    -t INT               : number of threads (<= 100, default 1)
+    -m INT               : memory limit for making kmer distribution (GB, >=1, default 16)
+    -tmp DIR             : directory for temporary files (default .)
+
+
+Outputs:
+    PREFIX_contig.fa
+    PREFIX_contigBubble.fa
+    PREFIX_kmerFrq.tsv
+
+rrziyoev@bioinflab-1:~/contigs$ ls
+sub-oilMP_S4_L001_R1_001.fastq.int_trimmed  sub-oilMP_S4_L001_R2_001.fastq.int_trimmed  sub-oil_R1.fastq.trimmed  sub-oil_R2.fastq.trimmed
+rrziyoev@bioinflab-1:~/contigs$ platanus assemble –o Contig –f *
+Platanus version: 1.2.4
+platanus assemble –o Contig –f sub-oilMP_S4_L001_R1_001.fastq.int_trimmed sub-oilMP_S4_L001_R2_001.fastq.int_trimmed sub-oil_R1.fastq.trimmed sub-oil_R2.fastq.trimmed
+
+
+Usage platanus assemble [Options]
+Options:
+    -o STR               : prefix of output files (default out, length <= 200)
+    -f FILE1 [FILE2 ...] : reads file (fasta or fastq, number <= 100)
+    -k INT               : initial k-mer size (default 32)
+    -s INT               : step size of k-mer extension (>= 1, default 10)
+    -n INT               : initial k-mer coverage cutoff (default 0, 0 means auto)
+    -c INT               : minimun k-mer coverage (default 2)
+    -a FLOAT             : k-mer extension safety level (default 10.0)
+    -u FLOAT             : maximum difference for bubble crush (identity, default 0.1)
+    -d FLOAT             : maximum difference for branch cutting (coverage ratio, default 0.5)
+    -e FLOAT             : k-mer coverage depth (k = initial k-mer size specified by -k) of homozygous region (default auto)
+    -t INT               : number of threads (<= 100, default 1)
+    -m INT               : memory limit for making kmer distribution (GB, >=1, default 16)
+    -tmp DIR             : directory for temporary files (default .)
+
+
+Outputs:
+    PREFIX_contig.fa
+    PREFIX_contigBubble.fa
+    PREFIX_kmerFrq.tsv
+
+rrziyoev@bioinflab-1:~/contigs$ ls
+sub-oilMP_S4_L001_R1_001.fastq.int_trimmed  sub-oilMP_S4_L001_R2_001.fastq.int_trimmed  sub-oil_R1.fastq.trimmed  sub-oil_R2.fastq.trimmed
+rrziyoev@bioinflab-1:~/contigs$ cd
+rrziyoev@bioinflab-1:~$ ls
+contigs  html  oilMP_S4_L001_R1_001.fastq  oilMP_S4_L001_R2_001.fastq  oil_R1.fastq  oil_R2.fastq  snap  sub-oilMP_S4_L001_R1_001.fastq  sub-oilMP_S4_L001_R2_001.fastq  sub-oil_R1.fastq  sub-oil_R2.fastq  trim
+rrziyoev@bioinflab-1:~$ cd trim
+rrziyoev@bioinflab-1:~/trim$ ls
+multiqc_data         sub-oilMP_S4_L001_R1_001.fastq.int_trimmed_fastqc.html  sub-oilMP_S4_L001_R2_001.fastq.int_trimmed_fastqc.html  sub-oil_R1.fastq.trimmed_fastqc.html  sub-oil_R2.fastq.trimmed_fastqc.html
+multiqc_report.html  sub-oilMP_S4_L001_R1_001.fastq.int_trimmed_fastqc.zip   sub-oilMP_S4_L001_R2_001.fastq.int_trimmed_fastqc.zip   sub-oil_R1.fastq.trimmed_fastqc.zip   sub-oil_R2.fastq.trimmed_fastqc.zip
+rrziyoev@bioinflab-1:~/trim$ cd
+rrziyoev@bioinflab-1:~$ cd contigs
+rrziyoev@bioinflab-1:~/contigs$ ls
+sub-oilMP_S4_L001_R1_001.fastq.int_trimmed  sub-oilMP_S4_L001_R2_001.fastq.int_trimmed  sub-oil_R1.fastq.trimmed  sub-oil_R2.fastq.trimmed
+rrziyoev@bioinflab-1:~/contigs$ platanus assemble –f sub-oil*.trimmed
+Platanus version: 1.2.4
+platanus assemble –f sub-oil_R1.fastq.trimmed sub-oil_R2.fastq.trimmed
+
+
+Usage platanus assemble [Options]
+Options:
+    -o STR               : prefix of output files (default out, length <= 200)
+    -f FILE1 [FILE2 ...] : reads file (fasta or fastq, number <= 100)
+    -k INT               : initial k-mer size (default 32)
+    -s INT               : step size of k-mer extension (>= 1, default 10)
+    -n INT               : initial k-mer coverage cutoff (default 0, 0 means auto)
+    -c INT               : minimun k-mer coverage (default 2)
+    -a FLOAT             : k-mer extension safety level (default 10.0)
+    -u FLOAT             : maximum difference for bubble crush (identity, default 0.1)
+    -d FLOAT             : maximum difference for branch cutting (coverage ratio, default 0.5)
+    -e FLOAT             : k-mer coverage depth (k = initial k-mer size specified by -k) of homozygous region (default auto)
+    -t INT               : number of threads (<= 100, default 1)
+    -m INT               : memory limit for making kmer distribution (GB, >=1, default 16)
+    -tmp DIR             : directory for temporary files (default .)
+
+
+Outputs:
+    PREFIX_contig.fa
+    PREFIX_contigBubble.fa
+    PREFIX_kmerFrq.tsv
+
+rrziyoev@bioinflab-1:~/contigs$ ls
+sub-oilMP_S4_L001_R1_001.fastq.int_trimmed  sub-oilMP_S4_L001_R2_001.fastq.int_trimmed  sub-oil_R1.fastq.trimmed  sub-oil_R2.fastq.trimmed
+rrziyoev@bioinflab-1:~/contigs$
